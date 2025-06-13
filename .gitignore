@@ -1,0 +1,212 @@
+# Cursor AI Rules Sample Project - GitIgnore Configuration
+
+# ===============================
+# IDE / Editor Files
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Cursor AI specific (保持対象のため除外しない)
+# .cursor/ は意図的にコミット対象とする
+
+# ===============================
+# OS Generated Files
+# ===============================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===============================
+# Temporary Files
+# ===============================
+*.tmp
+*.temp
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# ===============================
+# Docker Related
+# ===============================
+.dockerignore
+docker-compose.override.yml
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ===============================
+# Build & Compilation
+# ===============================
+dist/
+build/
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+
+# ===============================
+# Package Managers
+# ===============================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===============================
+# Languages & Frameworks
+# ===============================
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Rust
+target/
+Cargo.lock
+
+# ===============================
+# Testing & Coverage
+# ===============================
+coverage/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ===============================
+# Documentation Generated
+# ===============================
+docs/_build/
+site/
+
+# ===============================
+# Backup & Archive
+# ===============================
+*.bak
+*.backup
+*.orig
+*.rej
+*.zip
+*.tar.gz
+*.rar
+
+# ===============================
+# AI & ML Related
+# ===============================
+*.model
+*.pkl
+*.h5
+*.weights
+checkpoints/
+tensorboard/
+.wandb/
+
+# ===============================
+# Database
+# ===============================
+*.db
+*.sqlite
+*.sqlite3
+
+# ===============================
+# Configuration & Secrets
+# ===============================
+.env
+.env.*
+!.env.example
+config/local.json
+secrets.json
+*.pem
+*.key
+*.cert
+
+# ===============================
+# Custom Project Exclusions
+# ===============================
+# プロジェクト固有の除外ファイルがある場合はここに追加
+
+# ===============================
+# Keep Important Files
+# ===============================
+# 以下のファイルは重要なため、明示的に追跡対象とする
+!README.md
+!directory_structure.md
+!.cursor/rules/
+!.cursor/rules_background/ 
