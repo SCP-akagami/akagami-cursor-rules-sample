@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussion / 議論
+    url: https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/discussions
+    about: 一般的な質問や議論はこちらで行ってください
+  - name: 📚 Documentation / ドキュメント
+    url: https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/wiki
+    about: プロジェクトのドキュメントやWikiはこちら
+  - name: 🔒 Security Issue / セキュリティ問題
+    url: https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/security/advisories/new
+    about: セキュリティに関する問題は機密報告をご利用ください 

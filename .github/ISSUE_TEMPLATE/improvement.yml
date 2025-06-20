@@ -1,0 +1,153 @@
+name: 🔧 Improvement
+description: 既存機能の改善提案用テンプレート
+title: "[IMPROVEMENT] "
+labels: ["improvement", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 改善提案
+        既存機能の改善提案をありがとうございます。より良いサービスを提供するための貴重なご意見です。
+
+  - type: textarea
+    id: improvement-summary
+    attributes:
+      label: 🎯 改善内容の概要
+      description: どのような改善を提案しますか？
+      placeholder: 改善したい内容を簡潔に記述してください
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-situation
+    attributes:
+      label: 📋 現在の状況
+      description: 改善対象となる現在の機能や状況を説明してください
+      placeholder: |
+        現在どのような状況にあるか詳しく記述してください
+        - 対象の機能名
+        - 現在の動作や仕様
+        - 問題となっている点
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement-details
+    attributes:
+      label: 💡 改善案の詳細
+      description: 具体的な改善方法を説明してください
+      placeholder: |
+        どのように改善するか詳しく記述してください
+        - 変更すべき点
+        - 期待される効果
+        - 実装方法の案（技術的な詳細があれば）
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 🚀 改善の動機・理由
+      description: なぜこの改善が必要だと考えますか？
+      placeholder: |
+        改善が必要な理由を記述してください
+        - ユーザビリティの向上
+        - パフォーマンスの改善
+        - 保守性の向上
+        - セキュリティの強化
+        - その他の理由
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-benefits
+    attributes:
+      label: 📈 期待される効果・メリット
+      description: この改善によってどのような効果が期待されますか？
+      placeholder: |
+        改善によって得られる効果を記述してください
+        - ユーザーへの影響
+        - 開発チームへの影響
+        - システムへの影響
+        - ビジネスへの影響
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-areas
+    attributes:
+      label: 🎯 影響範囲
+      description: この改善により影響を受ける機能や領域はありますか？
+      placeholder: |
+        影響を受ける可能性がある領域を記述してください
+        - 関連する機能
+        - UI/UXの変更
+        - APIの変更
+        - データベースの変更
+        - その他のシステムへの影響
+
+  - type: textarea
+    id: implementation-considerations
+    attributes:
+      label: ⚙️ 実装時の考慮事項
+      description: 実装時に注意すべき点があれば記載してください
+      placeholder: |
+        実装時に考慮すべき点があれば記述してください
+        - 後方互換性
+        - 移行手順
+        - テスト要件
+        - リリース時期
+        - その他の制約
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📎 参考情報
+      description: 参考となる情報があれば記載してください
+      placeholder: |
+        参考となる情報があれば記述してください
+        - 類似の実装例
+        - 技術資料
+        - ベンチマーク結果
+        - ユーザーフィードバック
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚨 優先度
+      description: この改善の重要度を選択してください
+      options:
+        - 🔴 Critical - 緊急に対応が必要
+        - 🟠 High - 重要な改善
+        - 🟡 Medium - 有用な改善
+        - 🟢 Low - あれば良い改善
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact-scope
+    attributes:
+      label: 📊 影響範囲
+      description: この改善の影響範囲を選択してください
+      options:
+        - 🌐 Global - システム全体に影響
+        - 🏢 Module - 特定のモジュールに影響
+        - 🔧 Feature - 特定の機能に影響
+        - 🎨 UI/UX - ユーザーインターフェースのみ
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ チェックリスト
+      description: 提案前の確認事項
+      options:
+        - label: 既存のIssueに同様の提案がないことを確認しました
+          required: true
+        - label: 現在の状況と改善案を明確に記載しました
+          required: true
+        - label: 改善の動機と期待される効果を記載しました
+          required: true
+        - label: 影響範囲と実装時の考慮事項を検討しました
+          required: true 
